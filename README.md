@@ -2,8 +2,7 @@
 ## Basic navigation commands
 ## Basic file system commands
 ## Permissions &amp; users
-## Process management
+## Process &amp; system management
 ## Environment variables
 ## SSH keys management
-## Disk usage
 ## Package management
