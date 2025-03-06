@@ -4,5 +4,5 @@
 ## Permissions &amp; users
 ## Process &amp; system management
 ## Environment variables
-## SSH keys management
+## SSH keys management &amp; networking
 ## Package management
