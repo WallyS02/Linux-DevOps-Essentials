@@ -28,6 +28,24 @@
 * **useradd / userdel \<username>** - adds or deletes user
 * **passwd \<username>** - changes password of given user, if username omitted changes password of logged user
 ## Process &amp; system management
+* **ps** - prints currently running processes
+  - **ps aux** - prints details of currently running processes
+* **top / htop** - monitors system resources and processes in real time
+* **kill \<PID>** - terminates process of given PID
+  - **kill -9 \<PID>** - forcefully terminates process of given PID
+* **systemctl** - manages system services
+  - **systemctl start \<service>** - starts specified service
+  - **systemctl stop \<service>** - stops specified service
+  - **systemctl status \<service>** - checks status of specified service
+* **journalctl** - prints system logs
+  - **journalctl -u \<service>** - prints system logs of specified service
+* **df -h \<path>** - prints disk usage, if path omitted prints all information
+* **du -h \<path>** - estimates files and directories disk usage, if path omitted estimates all files and directories
+* **free** - prints system memory usage
+* **uptime** - prints system uptime and load averages
 ## Environment variables
+* **export \<VARIABLE_NAME=value>** - sets environment variable
+* **env** - prints environment variables
+* **echo $VARIABLE_NAME** - prints given environment variable
 ## SSH keys management &amp; networking
 ## Package management
