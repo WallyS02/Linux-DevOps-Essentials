@@ -100,7 +100,11 @@
   - **scp -r \<directory_path> \<remote_username@remote_host\:remote_directory>** - securely, recursively copies directory from local to remote system
   - **scp \<remote_username@remote_host\:/home/user/remote_path> \<local_path>** - securely copies files from remote to local system
 ## SSH
-* **ssh** - securely connects to remote systems
+* **ssh-keygen** - generates pair of SSH keys
+  - **ssh-keygen -t rsa -b 4096 -C \<your_email>** - typical key generation
+* **ssh-copy-id** - copies public SSH key to remote server
+  - **ssh-copy-id \<remote_user@remote_host>** - typical key coping
+* **ssh -i \<path_to_private_key> \<remote_user@remote_host>** - securely connects to remote systems, -i stands for specifing private SSH key to use
 ## Package management
 * **apt** - managing packages in Ubuntu/Debian
   - **apt update** - updates packages
