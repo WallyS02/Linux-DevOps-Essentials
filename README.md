@@ -1,4 +1,5 @@
 # Linux DevOps Essentials
+## If I'll find any other feature usefull - it'll surely be added!
 ## Basic navigation commands
 * **pwd** - prints current working directory
 * **ls** - lists files and directories in current working directory
@@ -111,5 +112,32 @@
   - **yum install \<package_name>** - installs package of given name
   - **yum remove \<package_name>** - removes package of given name
 ## Other
-* **tar** - creates and extracts tar archives
-* **cron** - time-based job scheduler that schedules commands or scripts to run at specified times
+* **tar \<options> \<archive_file> \<file_or_directory_to_be_archived>** - creates and extracts tar archives
+  - **-c** - creates an archive by bundling files and directories together
+  - **-x** - extracts files and directories from an existing archive
+  - **-f** - specifies the filename of the archive to be created or extracted
+  - **-t** - displays or lists the files and directories contained within an archive
+  - **-u** - archives and adds new files or directories to an existing archive
+  - **-v** - displays verbose information, providing detailed output during the archiving or extraction process
+  - **-A** - concatenates multiple archive files into a single archive
+  - **-z** - uses gzip compression when creating a tar file, resulting in a compressed archive with the '.tar.gz' extension
+  - **-j** - uses bzip2 compression when creating a tar file, resulting in a compressed archive with the '.tar.bz2' extension
+  - **-W** - verifies the integrity of an archive file, ensuring its contents are not corrupted
+  - **-r** - updates or adds files or directories to an already existing archive without recreating the entire archive
+  - **tar cvzf \<archive_file> \<file_or_directory_to_be_archived>** - typical compression
+  - **tar xvzf \<archive_file>** - typical extraction
+* **crontab** - time-based job scheduler that schedules commands or scripts to run at specified times
+  - **crontab -l** - list current crontab entries
+  - **crontab -e** - edit crontab entries
+  - **How it works?**\
+  MIN HOUR DOM MON DOW CMD\
+  MIN \(Minute\) - specifies the minute when the command will run\
+  HOUR \(Hour\) - denotes the hour of the day when the command is scheduled to execute\
+  DOM \(Day of Month\) - specifies the day of the month for the task\
+  MON \(Month\) - indicates the month during which the command will be executed\
+  DOW \(Day of Week\) - specifies the day of the week for the task\
+  CMD \(Command\) - represents the actual command or script that will run at the scheduled time\
+  \* value represents all the possible units - e.g. every minute of every hour throughout the year\
+  The comma-separated value in a field specifies that the command needs to be executed at all the mentioned times\
+  The dash-separated value in a field specifies that the command needs to be executed within a specific range of time\
+  Keywords @yearly, @montly, @daily, @hourly, @reboot can be used to specific typical times.
