@@ -97,7 +97,7 @@
 * **scp** - securely copies files between systems
   - **scp \<file> \<remote_username@remote_host\:remote_directory>** - securely copies files from local to remote system
   - **scp -r \<directory_path> \<remote_username@remote_host\:remote_directory>** - securely, recursively copies directory from local to remote system
-  - **scp \<remote_username@remote_host\:/home/user/remote_path>** - securely copies files from remote to local system
+  - **scp \<remote_username@remote_host\:/home/user/remote_path> \<local_path>** - securely copies files from remote to local system
 ## SSH
 * **ssh** - securely connects to remote systems
 ## Package management
