@@ -1,5 +1,5 @@
 # Linux DevOps Essentials
-## If I'll find any other feature usefull - it'll surely be added!
+## If I'll find any other feature to be useful - it'll surely be added!
 ## Basic navigation commands
 * **pwd** - prints current working directory
 * **ls** - lists files and directories in current working directory
