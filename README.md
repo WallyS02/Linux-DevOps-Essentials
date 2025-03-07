@@ -22,7 +22,15 @@
 * **grep \<pattern> \<file>** - searches for patterns in files
   - **grep -r \<pattern> \<file>** - searches recursively in directory and its contents
 ## Permissions &amp; users
-* **chmod \<permissions> \<path>** - changes file or directory permissions, usual use with number representing permissions for 3 user groups - xxx
+* **chmod \<permissions> \<path>** - changes file or directory permissions, usual use with number representing permissions for 3 user groups (owner, group, rest) - xxx
+  - **7** - read, write, execute\
+  **6** - read, write\
+  **5** - read, execute\
+  **4** - read\
+  **3** - write, execute\
+  **2** - write\
+  **1** - execute\
+  **0** - none
 * **chown \<user\:group> \<path>** - changes file or directory ownership
 * **sudo \<command>** - executes command with privileges of superuser
 * **useradd / userdel \<username>** - adds or deletes user
