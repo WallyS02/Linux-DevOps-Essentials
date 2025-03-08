@@ -50,7 +50,7 @@
   - **journalctl -u \<service>** - prints system logs of specified service
 * **df -h \<path>** - prints disk usage, if path omitted prints all information
 * **du -h \<path>** - estimates files and directories disk usage, if path omitted estimates all files and directories
-* **free** - prints system memory usage
+* **free -h** - prints system memory usage
 * **uptime** - prints system uptime and load averages
 ## Environment variables
 * **export \<VARIABLE_NAME=value>** - sets environment variable
