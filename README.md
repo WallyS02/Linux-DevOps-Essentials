@@ -82,8 +82,8 @@
   - **ip addr add \<IP_adress> dev \<interface>** - assigns an IP address to an interface
   - **ip addr del \<IP_adress> dev \<interface>** - deletes an assigned IP address to an interface
   - **ip link set \<interface> up** - enables a network interface
-  - **ip link set \<interface> down** - monitors and displays the state of devices, addresses, and routes continuously
-  - **ip monitor** - disables a network interface
+  - **ip link set \<interface> down** - disables a network interface
+  - **ip monitor** - monitors and displays the state of devices, addresses, and routes continuously
 * **iptables / ufw** - firewall configuration
   - **iptables -t \<table>** - option that sets chosen table \(set of chains\), tables: filter, nat, mangle, raw, security
   - **iptables -t \<table> -A/-C/-D \<chain>** - options that append (-A), check if exists (-C), delete (-D) rules to the given chain \(set of rules\), chains: INPUT, FORWARD, OUTPUT, PREROUTING, POSTROUTING
